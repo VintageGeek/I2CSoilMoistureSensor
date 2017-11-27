@@ -2,10 +2,17 @@
 
 Simple Particle Library for the I2C Soil Moisture Sensor version from Chirp
 (https://github.com/Miceuz/i2c-moisture-sensor).  This readme and code is a conversion of the great work done by
-Apollon77 who's original code can be found at https://github.com/Apollon77/I2CSoilMoistureSensor
+Apollon77 who's original code can be found at https://github.com/Apollon77/I2CSoilMoistureSensor.  Most of the method descriptions left as is from his branch.
 
-## Informations
-More informations at: https://www.tindie.com/products/miceuz/i2c-soil-moisture-sensor/
+## Where can I buy this sensor?
+
+More informations at: https://www.tindie.com/products/miceuz/i2c-soil-moisture-sensor/.
+If you have an older version of the ruggedized sensor and the wire colors don't match Miceuz's site, try this
+
+Blue = gnd  
+Red = vcc   
+Yellow = scl  
+White = sda  
 
 ## Version History
 
@@ -18,7 +25,7 @@ None
 ## Methods
 
 ### Constructor I2CSoilMoistureSensor
-Optionally set sensor I2C address if different from default (0x20)
+Optionally set sensor I2C address if different from default (0x20).  Per Miceuz's site, if you hot plug the sensor, your address may shift unexpectedly.  This happened to me (0x20 to 0x45).  You'll need to use a simple I2C Scanner to find your addresses and then issue a setAddress command to reset.
 
 
 ### begin(bool wait)
