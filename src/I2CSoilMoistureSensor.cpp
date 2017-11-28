@@ -85,7 +85,7 @@ void I2CSoilMoistureSensor::changeSensor(int addr, bool wait) {
  * Return current Address of the Sensor                                 *
  *----------------------------------------------------------------------*/
 uint8_t I2CSoilMoistureSensor::getAddress() {
-     return readI2CRegister16bitSigned(sensorAddress, SOILMOISTURESENSOR_GET_ADDRESS);
+     return readI2CRegister8bit(sensorAddress, SOILMOISTURESENSOR_GET_ADDRESS);
  // return sensorAddress;
 }
 
