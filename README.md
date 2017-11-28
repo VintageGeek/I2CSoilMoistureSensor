@@ -16,9 +16,10 @@ White = sda
 
 ## Version History
 
+### v1.0.2
+- Fixed bug in getAddress. Was using 16bit read, should have been 8bit
 ### v1.0.1
 - Updated properties, published to PCL
-
 ### v1.0.0
 - Initial Release, published to the Particle Community Library (PCL)
 
