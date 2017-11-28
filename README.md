@@ -16,8 +16,11 @@ White = sda
 
 ## Version History
 
+### v1.0.1
+- Updated properties, published to PCL
+
 ### v1.0.0
-- Initial Release, published to the Particle Community Library
+- Initial Release, published to the Particle Community Library (PCL)
 
 ## Notes/Hints
 None
