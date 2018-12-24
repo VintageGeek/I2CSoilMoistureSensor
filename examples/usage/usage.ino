@@ -10,6 +10,11 @@ I2CSoilMoistureSensor i2CSoilMoistureSensor(soilSensorAddress);
 
 
 void setup() {
+    //Init Wire for I2C Communication
+    Wire.setSpeed(400000);
+    if (!Wire.isEnabled()) {
+        Wire.begin();
+    }
     // Call functions on initialized library objects that require hardware
     i2CSoilMoistureSensor.begin();
 }
