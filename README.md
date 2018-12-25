@@ -15,7 +15,8 @@ Yellow = scl
 White = sda  
 
 ## Version History
-
+### v1.0.3
+- Fixed example code - added wire command and other enhancements
 ### v1.0.2
 - Fixed bug in getAddress. Was using 16bit read, should have been 8bit
 ### v1.0.1
